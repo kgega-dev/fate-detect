@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
-body {
-  background-color: black;
+.theme-dark {
+  --color-primary-green: #39de7f;
+  --color-bg-black: #000000;
+  --color-bg-dark: #0a0a0a;
+  --color-border-gray: #1a1a1a;
+}
+
+:root {
+  background-color: var(--color-bg-black);
   color: white;
-  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
