@@ -8,7 +8,7 @@ export const Changelogs = () => {
   const logs = [
     { 
       version: '2.6.0', 
-      date: 'Dec 22, 2024', 
+      date: 'Dec 22, 2025', 
       type: 'Major', 
       notes: [
         'Added System Intel Feed on Dashboard',
@@ -19,7 +19,7 @@ export const Changelogs = () => {
     },
     { 
       version: '2.5.2', 
-      date: 'Dec 20, 2024', 
+      date: 'Dec 20, 2025', 
       type: 'Security', 
       notes: [
         'Kernel-mode driver stealth improvements',
