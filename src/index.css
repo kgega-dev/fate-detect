@@ -1,14 +1,65 @@
 @import "tailwindcss";
 
-.theme-dark {
-  --color-primary-green: #39de7f;
-  --color-bg-black: #000000;
-  --color-bg-dark: #0a0a0a;
-  --color-border-gray: #1a1a1a;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-detect-green: #39de7f;
+  --color-detect-bg: #050505;
+  --color-detect-card: #0a0a0a;
 }
 
-:root {
-  background-color: var(--color-bg-black);
-  color: white;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@layer base {
+  body {
+    background-color: #050505;
+    color: #e8e6e3;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Fate Grid pattern */
+.fate-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, #111 1px, transparent 1px),
+    linear-gradient(to bottom, #111 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  background-color: #020202;
+  color: #e8e6e3;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Console */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #050505;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #39de7f1a;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #39de7f33;
+}
+
+/* Page transitions */
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
