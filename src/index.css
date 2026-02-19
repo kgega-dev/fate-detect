@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Definirane custom varijable za boje */
 @theme {
   --color-detect-green: #39de7f;
   --color-detect-bg: #050505;
@@ -20,7 +21,7 @@
   }
 }
 
-/* Fate Grid pattern */
+/* Fate Grid pattern - Mrezaste pozadine pomocu CSS gradijenata */
 .fate-grid {
   position: absolute;
   inset: 0;
@@ -28,18 +29,10 @@
     linear-gradient(to right, #111 1px, transparent 1px),
     linear-gradient(to bottom, #111 1px, transparent 1px);
   background-size: 50px 50px;
-  pointer-events: none;
+  pointer-events: none; /* Klikovi koji prolaze kroz mrezu na elemente ispod */
 }
 
-body {
-  margin: 0;
-  background-color: #020202;
-  color: #e8e6e3;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-/* Custom Scrollbar for Console */
+/* Custom Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px;
 }
@@ -54,7 +47,7 @@ body {
   background: #39de7f33;
 }
 
-/* Page transitions */
+/* Animacije za Fade-In*/
 .fade-in {
   animation: fadeIn 0.5s ease-out;
 }

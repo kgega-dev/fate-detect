@@ -1,7 +1,7 @@
 import { Bell, User } from 'lucide-react';
 
 export const Navbar = () => {
-  // Čitamo iz memorije, ako nema ničega stavi Gega247 kao default
+  // Cita iz memorije, ako nema nicega stavi Gega247 kao default korisnika 
   const currentUser = localStorage.getItem('user') || 'Gega247';
   const currentRank = localStorage.getItem('rank') || 'Enterprise Member';
 
