@@ -1,74 +1,53 @@
-# React + TypeScript + Vite
+# Fate Detect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React SPA dashboard project focused on responsive UI, modular structure and practical frontend implementation.
 
-Currently, two official plugins are available:
+## Overview
+Fate Detect is a portfolio-ready web application built to showcase modern frontend development using React, TypeScript and Vite. The project is designed as a security-oriented dashboard with structured components, clean layout and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Context API
+- Framer Motion
 
-## React Compiler
+## Features
+- Responsive dashboard UI
+- Modular component structure
+- Type-safe frontend architecture
+- Page routing
+- Animated interface elements
+- Portfolio-ready project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### Clone the repository
+```bash
+git clone https://github.com/kgega-dev/fate-detect.git
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Enter the project folder
+cd fate-detect
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Install dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Run the development server
+npm run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Build for production
+npm run build
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Project Purpose
+This project was built as part of personal portfolio development and practical frontend learning, with a focus on React, TypeScript and modern UI structure.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Author
+Kristijan Gega
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# nks-projekt" 
+Links
+GitHub: https://github.com/kgega-dev
+LinkedIn: https://www.linkedin.com/in/kristijan-gega/
+Portfolio: https://kgega-portfolio.vercel.app/
+
