@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { ShieldCheck, Trash2, Download } from "lucide-react";
+import { useState } from "react";
+import { Trash2, Download } from "lucide-react";
 import { useToast } from "../context/ToastContext";
 
 type ScanResult = "Clean" | "Flagged";

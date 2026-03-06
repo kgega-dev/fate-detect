@@ -1,4 +1,3 @@
-import React from "react";
 import { AnimatePresence } from "framer-motion";
 import { useToast } from "../context/ToastContext";
 import { Toast } from "./Toast";

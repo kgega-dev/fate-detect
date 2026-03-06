@@ -1,6 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-
 export const Background = () => {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 bg-[#020202]">
