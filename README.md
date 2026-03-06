@@ -5,6 +5,9 @@ Modern React SPA dashboard project focused on responsive UI, modular structure a
 ## Overview
 Fate Detect is a portfolio-ready web application built to showcase modern frontend development using React, TypeScript and Vite. The project is designed as a security-oriented dashboard with structured components, clean layout and responsive design.
 
+## Live Demo
+[Open Fate Detect](https://fate-detect.vercel.app/)
+
 ## Tech Stack
 - React
 - TypeScript
@@ -22,10 +25,24 @@ Fate Detect is a portfolio-ready web application built to showcase modern fronte
 - Animated interface elements
 - Portfolio-ready project structure
 
-## Getting Started
+## Demo Login
+Fate Detect is available as a portfolio demo.
 
-### Clone the repository
-```bash
+To access the dashboard:
+- enter **any 4 characters** in the license field
+- click **Authenticate**
+
+## Re-testing the Login Flow
+If you want to test the login screen again from the beginning, remove the stored demo user from local storage:
+
+```js
+localStorage.removeItem("fate_detect_user")
+
+Then refresh the page.
+
+Getting Started
+Clone the repository
+
 git clone https://github.com/kgega-dev/fate-detect.git
 
 Enter the project folder
@@ -47,7 +64,7 @@ Author
 Kristijan Gega
 
 Links
-GitHub: https://github.com/kgega-dev
-LinkedIn: https://www.linkedin.com/in/kristijan-gega/
+Live Demo: https://fate-detect.vercel.app/
 Portfolio: https://kgega-portfolio.vercel.app/
-
+LinkedIn: https://www.linkedin.com/in/kristijan-gega/
+GitHub: https://github.com/kgega-dev
