@@ -37,34 +37,45 @@ If you want to test the login screen again from the beginning, remove the stored
 
 ```js
 localStorage.removeItem("fate_detect_user")
+```
 
 Then refresh the page.
 
 Getting Started
-Clone the repository
 
+1. Clone the repository
+```bash
 git clone https://github.com/kgega-dev/fate-detect.git
+```
 
-Enter the project folder
+2. Enter the project folder
+```bash
 cd fate-detect
+```
 
-Install dependencies
+3. Install dependencies
+```bash
 npm install
+```
 
-Run the development server
+4. Run the development server
+```bash
 npm run dev
+```
 
-Build for production
+5. Build for production
+```bash
 npm run build
+```
 
-Project Purpose
+## Project Purpose
 This project was built as part of personal portfolio development and practical frontend learning, with a focus on React, TypeScript and modern UI structure.
 
-Author
+## Author
 Kristijan Gega
 
-Links
-Live Demo: https://fate-detect.vercel.app/
-Portfolio: https://kgega-portfolio.vercel.app/
-LinkedIn: https://www.linkedin.com/in/kristijan-gega/
-GitHub: https://github.com/kgega-dev
+## Links
+- Live Demo: https://fate-detect.vercel.app/
+- Portfolio: https://kgega-portfolio.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/kristijan-gega/
+- GitHub: https://github.com/kgega-dev
